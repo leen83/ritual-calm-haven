@@ -13,7 +13,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Ritual Café & Studio" },
       { property: "og:description", content: "A mindful & comfortable space on Reem Island, Abu Dhabi." },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: img1. },
+      { property: "og:image", content: img1 },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
