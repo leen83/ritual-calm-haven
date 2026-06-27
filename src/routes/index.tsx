@@ -1,5 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin, Clock, Star } from "lucide-react";
+import { hours } from "@/data/menu";
+
 const heroImg = "/images/IMG_5879.jpeg";
 const aboutImg = "/images/IMG_5880.jpeg";
 const interior1 = "/images/IMG_8316.jpeg";
@@ -7,7 +9,6 @@ const interior2 = "/images/IMG_8318.jpeg";
 const interior3 = "/images/IMG_8320.jpeg";
 const drinkImg = "/images/IMG_8321.jpeg";
 const brunchImg = "/images/IMG_8322.jpeg";
-import { hours } from "@/data/menu";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -17,7 +18,9 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Ritual Café & Studio" },
       { property: "og:description", content: "A mindful & comfortable café and studio on Reem Island, Abu Dhabi." },
       { property: "og:url", content: "/" },
+      { property: "og:url", content: "/" },
       { property: "og:image", content: heroImg },
+    ],
     links: [{ rel: "canonical", href: "/" }],
   }),
   component: Home,
