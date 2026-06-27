@@ -24,11 +24,10 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-  { img: drinkImg.url, name: "Iced Honeycomb Latte", note: "Signature" },
 { img: drinkImg, name: "Iced Honeycomb Latte", note: "Signature" },
 { img: brunchImg, name: "Avocado Toast", note: "Brunch" },
 { img: interior1, name: "Hand-Brewed V60", note: "Coffee" },
-
+];
 const reviews = [
   {
     quote: "Easily one of the best spots to relax and unwind. The location is amazing and the vibes are unmatched.",
