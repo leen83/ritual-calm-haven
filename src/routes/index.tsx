@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin, Clock, Star } from "lucide-react";
-import heroImg from "@/assets/image-6.jpeg.asset.json";
-import aboutImg from "@/assets/image-3.jpeg.asset.json";
-import interior1 from "@/assets/image-5.jpeg.asset.json";
-import interior2 from "@/assets/image-4.jpeg.asset.json";
-import interior3 from "@/assets/image-7.jpeg.asset.json";
-import drinkImg from "@/assets/image.jpeg.asset.json";
-import brunchImg from "@/assets/image-2.jpeg.asset.json";
+const heroImg = "/images/IMG_5879.jpeg";
+const aboutImg = "/images/IMG_5880.jpeg";
+const interior1 = "/images/IMG_8316.jpeg";
+const interior2 = "/images/IMG_8318.jpeg";
+const interior3 = "/images/IMG_8320.jpeg";
+const drinkImg = "/images/IMG_8321.jpeg";
+const brunchImg = "/images/IMG_8322.jpeg";
 import { hours } from "@/data/menu";
 
 export const Route = createFileRoute("/")({
@@ -17,8 +17,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Ritual Café & Studio" },
       { property: "og:description", content: "A mindful & comfortable café and studio on Reem Island, Abu Dhabi." },
       { property: "og:url", content: "/" },
-      { property: "og:image", content: heroImg.url },
-    ],
+      { property: "og:image", content: heroImg },
     links: [{ rel: "canonical", href: "/" }],
   }),
   component: Home,
@@ -26,9 +25,9 @@ export const Route = createFileRoute("/")({
 
 const featured = [
   { img: drinkImg.url, name: "Iced Honeycomb Latte", note: "Signature" },
-  { img: brunchImg.url, name: "Avocado Toast", note: "Brunch" },
-  { img: interior1.url, name: "Hand-Brewed V60", note: "Coffee" },
-];
+{ img: drinkImg, name: "Iced Honeycomb Latte", note: "Signature" },
+{ img: brunchImg, name: "Avocado Toast", note: "Brunch" },
+{ img: interior1, name: "Hand-Brewed V60", note: "Coffee" },
 
 const reviews = [
   {
@@ -54,7 +53,7 @@ function Home() {
       {/* Hero */}
       <section className="relative h-[100svh] min-h-[640px] w-full overflow-hidden">
         <img
-          src={heroImg.url}
+          src={heroImg}
           alt="Ritual Café terrace overlooking the water on Reem Island"
           className="absolute inset-0 h-full w-full object-cover"
         />
