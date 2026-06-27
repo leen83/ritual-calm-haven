@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
-import img1 from "@/assets/image-5.jpeg.asset.json";
-import img2 from "@/assets/image-4.jpeg.asset.json";
-import img3 from "@/assets/image-7.jpeg.asset.json";
-import img4 from "@/assets/image-3.jpeg.asset.json";
+const img1 = "/images/IMG_8316.jpeg";
+const img2 = "/images/IMG_8318.jpeg";
+const img3 = "/images/IMG_8320.jpeg";
+const img4 = "/images/IMG_5880.jpeg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -13,7 +13,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Ritual Café & Studio" },
       { property: "og:description", content: "A mindful & comfortable space on Reem Island, Abu Dhabi." },
       { property: "og:url", content: "/about" },
-      { property: "og:image", content: img1.url },
+      { property: "og:image", content: img1. },
     ],
     links: [{ rel: "canonical", href: "/about" }],
   }),
@@ -37,7 +37,7 @@ function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 md:px-10 pb-20">
         <div className="aspect-[16/8] overflow-hidden rounded-sm">
-          <img src={img1.url} alt="Espresso bar lit by warm sunset light" className="h-full w-full object-cover" />
+          <img src={img1} alt="Espresso bar lit by warm sunset light" className="h-full w-full object-cover" />
         </div>
       </section>
 
@@ -60,10 +60,10 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 pb-16">
         <div className="grid gap-6 md:grid-cols-2">
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
-            <img src={img4.url} alt="Wooden table interior" className="h-full w-full object-cover" />
+            <img src={img4} alt="Wooden table interior" className="h-full w-full object-cover" />
           </div>
           <div className="aspect-[4/5] overflow-hidden rounded-sm md:mt-16">
-            <img src={img2.url} alt="Soft staircase and natural light" className="h-full w-full object-cover" />
+            <img src={img2} alt="Soft staircase and natural light" className="h-full w-full object-cover" />
           </div>
         </div>
       </section>
@@ -86,7 +86,7 @@ function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-6 md:px-10 pb-24">
         <div className="aspect-[16/7] overflow-hidden rounded-sm">
-          <img src={img3.url} alt="Ritual studio space with curated objects" className="h-full w-full object-cover" />
+          <img src={img3} alt="Ritual studio space with curated objects" className="h-full w-full object-cover" />
         </div>
       </section>
 
