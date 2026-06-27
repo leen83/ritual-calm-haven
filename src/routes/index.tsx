@@ -59,7 +59,7 @@ function Home() {
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background/70" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-36 text-center md:pb-48">
+        <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-24 text-center md:pb-32">
           <p className="fade-in mb-6 text-[11px] uppercase tracking-[0.4em] text-foreground/80">
             Reem Island · Abu Dhabi
           </p>
