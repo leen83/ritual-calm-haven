@@ -113,7 +113,7 @@ function Home() {
           </div>
           <div className="order-1 md:order-2">
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
-              <img src={aboutImg.url} alt="Ritual café interior" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+              <img src={aboutImg} alt="Ritual café interior" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
             </div>
           </div>
         </div>
