@@ -18,7 +18,6 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Ritual Café & Studio" },
       { property: "og:description", content: "A mindful & comfortable café and studio on Reem Island, Abu Dhabi." },
       { property: "og:url", content: "/" },
-      { property: "og:url", content: "/" },
       { property: "og:image", content: heroImg },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -164,19 +163,19 @@ function Home() {
         </div>
         <div className="grid gap-4 md:gap-6 md:grid-cols-6">
           <div className="md:col-span-4 aspect-[4/3] overflow-hidden rounded-sm">
-            <img src={brunchImg.url} alt="Brunch with waterfront view" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={brunchImg} alt="Brunch with waterfront view" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-[4/3] md:aspect-auto overflow-hidden rounded-sm">
-            <img src={interior2.url} alt="Soft natural light in the staircase" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={interior2} alt="Soft natural light in the staircase" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-square overflow-hidden rounded-sm">
-            <img src={drinkImg.url} alt="House signature drink" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={drinkImg} alt="House signature drink" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-square overflow-hidden rounded-sm">
-            <img src={interior1.url} alt="Espresso bar with greenery" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={interior1} alt="Espresso bar with greenery" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-square overflow-hidden rounded-sm">
-            <img src={interior3.url} alt="Curated studio space" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={interior3} alt="Curated studio space" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
         </div>
       </section>
