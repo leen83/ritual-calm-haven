@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logoAsset from "@/assets/image-8.jpeg.asset.json";
+const logoAsset = "/images/IMG_5888.jpeg";
 
 const links = [
   { to: "/" as const, label: "Home" },
@@ -28,7 +28,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10 md:py-5">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <img src={logoAsset.url} alt="Ritual Café & Studio" className="h-9 w-auto md:h-10" />
+        <img src={logoAsset.url} alt="Ritual Café & Studio" className="h-9 w-auto md:h-10" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
