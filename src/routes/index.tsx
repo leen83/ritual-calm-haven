@@ -147,13 +147,6 @@ function Home() {
     </article>
   ))}
 </div>
-                <div className="mt-5 flex items-baseline justify-between">
-                  <h3 className="font-display text-2xl">{f.name}</h3>
-                  <span className="text-[10px] uppercase tracking-[0.3em] text-taupe">{f.note}</span>
-                </div>
-              </article>
-            ))}
-          </div>
           <div className="mt-14 flex justify-center">
             <Link
               to="/menu"
