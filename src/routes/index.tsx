@@ -27,8 +27,8 @@ export const Route = createFileRoute("/")({
 });
 
 const featured = [
-{ img: drinkImg, name: "Iced Honeycomb Latte", note: "Signature" },
-{ img: brunchImg, name: "Avocado Toast", note: "Brunch" },
+{ img: drinkImg, name: "Avocado Toast", note: "Signature" },
+{ img: brunchImg, name: "Iced Honeycomb Latte", note: "Brunch" },
 { img: cheesecakeImg, name: "San Sebastian Cheesecake" },
 ];
 const reviews = [
