@@ -9,6 +9,7 @@ const interior2 = "/images/IMG_8318.jpeg";
 const interior3 = "/images/IMG_8320.jpeg";
 const drinkImg = "/images/IMG_8321.jpeg";
 const brunchImg = "/images/IMG_8322.jpeg";
+const cheesecakeImg = "/images/087E5C48-1CF3-4508-BBDD-A17DF8F98952.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -28,7 +29,7 @@ export const Route = createFileRoute("/")({
 const featured = [
 { img: drinkImg, name: "Iced Honeycomb Latte", note: "Signature" },
 { img: brunchImg, name: "Avocado Toast", note: "Brunch" },
-{ img: interior1, name: "Hand-Brewed V60", note: "Coffee" },
+{ img: cheesecakeImg, name: "San Sebastian Cheesecake" },
 ];
 const reviews = [
   {
