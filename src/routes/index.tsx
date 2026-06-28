@@ -141,9 +141,9 @@ function Home() {
         />
       </div>
 
-      <h3 className="mt-8 font-display text-3xl leading-tight text-foreground md:text-4xl">
-        {f.name}
-      </h3>
+      <h3 className="mt-7 text-center font-display text-2xl leading-snug text-foreground md:text-3xl">
+  {f.name}
+</h3>
     </article>
   ))}
 </div>
