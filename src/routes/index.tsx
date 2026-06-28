@@ -61,32 +61,21 @@ function Home() {
 />
 <div className="absolute inset-0 bg-black/35" />
 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/25 to-black/45" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-24 text-center md:pb-32">
-          <p className="fade-in mb-6 text-[12px] uppercase tracking-[0.55em] text-white/90">
-            Reem Island · Abu Dhabi
-          </p>
-          <h1 className="fade-in-up font-display text-5xl leading-[1.05] text-white sm:text-6xl">
-            A quiet ritual,<br/>brewed with intention.
-          </h1>
-          <p className="fade-in-up mt-6 max-w-2xl text-base text-white/90 md:text-xl">
-            Specialty coffee, holistic food, and a calm creative space to begin or end your day.
-          </p>
-          <div className="fade-in-up mt-12 flex flex-wrap items-center justify-center gap-3" style={{ animationDelay: "220ms" }}>
-            <Link
-              to="/menu"
-              className="group inline-flex items-center gap-3 bg-foreground px-7 py-4 text-xs uppercase tracking-[0.3em] text-background transition-all duration-500 hover:bg-foreground/85"
-            >
-              View Menu
-              <ArrowRight className="h-3.5 w-3.5 transition-transform duration-500 group-hover:translate-x-1" />
-            </Link>
-            <Link
-              to="/location"
-              className="inline-flex items-center gap-3 border border-foreground/70 px-7 py-4 text-xs uppercase tracking-[0.3em] text-foreground transition-all duration-500 hover:bg-foreground hover:text-background"
-            >
-              Visit Us
-            </Link>
-          </div>
-        </div>
+        <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-24 text-center md:pb-28">
+  <h1 className="fade-in-up font-display text-5xl leading-[1.05] text-white sm:text-6xl md:text-7xl lg:text-8xl">
+    A quiet ritual,<br />brewed with intention.
+  </h1>
+
+  <div className="fade-in-up mt-12 flex flex-wrap items-center justify-center gap-3">
+    <Link
+      to="/menu"
+      className="group inline-flex items-center gap-3 bg-foreground px-7 py-4 text-xs uppercase tracking-[0.3em] text-background transition-all duration-300 hover:bg-foreground/90"
+    >
+      View Menu
+      <ArrowRight className="h-3.5 w-3.5 transition-transform duration-500 group-hover:translate-x-1" />
+    </Link>
+  </div>
+</div>
       </section>
 
       {/* About */}
