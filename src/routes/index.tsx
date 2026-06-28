@@ -130,12 +130,23 @@ function Home() {
               A glimpse of what's on offer — from slow-brewed coffee to seasonal brunch.
             </p>
           </div>
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
-            {featured.map((f) => (
-              <article key={f.name} className="group">
-                <div className="overflow-hidden rounded-sm aspect-[4/5] bg-muted">
-                  <img src={f.img} alt={f.name} className="h-full w-full object-cover transition-transform duration-[1400ms] group-hover:scale-105" />
-                </div>
+          <div className="mt-16 grid gap-12 md:grid-cols-3">
+  {featured.map((f) => (
+    <article key={f.name} className="group text-center">
+      <div className="overflow-hidden rounded-sm aspect-[4/5] bg-muted">
+        <img
+          src={f.img}
+          alt={f.name}
+          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
+      </div>
+
+      <h3 className="mt-8 font-display text-3xl leading-tight text-foreground md:text-4xl">
+        {f.name}
+      </h3>
+    </article>
+  ))}
+</div>
                 <div className="mt-5 flex items-baseline justify-between">
                   <h3 className="font-display text-2xl">{f.name}</h3>
                   <span className="text-[10px] uppercase tracking-[0.3em] text-taupe">{f.note}</span>
