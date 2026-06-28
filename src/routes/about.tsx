@@ -23,66 +23,67 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <>
-      <section className="pt-36 pb-16 md:pt-44 md:pb-24 px-6 md:px-10">
-        <div className="mx-auto max-w-4xl text-center">
-          <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">Our Story</p>
-          <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
-            More than a café — a quiet ritual.
-          </h1>
-          <p className="mt-8 text-lg text-muted-foreground leading-[1.8] max-w-2xl mx-auto">
-            Ritual is a mindful and comfortable space that invites you to dine and unwind, gather and create.
-          </p>
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-6 md:px-10 pb-20">
-        <div className="aspect-[16/8] overflow-hidden rounded-sm">
-          <img src={img1} alt="Espresso bar lit by warm sunset light" className="h-full w-full object-cover" />
-        </div>
-      </section>
-
-      <section className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
-        <div className="grid gap-16 md:grid-cols-2 md:gap-24 items-start">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">Quality, sourced</p>
-            <h2 className="mt-5 font-display text-4xl">Honest food, slow coffee</h2>
-          </div>
-          <div>
-            <p className="text-base leading-[1.9] text-muted-foreground">
-              Ritual embraces quality food, coffee and service. We serve holistic, fresh fare sourced from quality
-              farms — and the food is as tasty as it looks. From single-origin pour-overs to warm sourdough plates,
-              every detail is considered.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section className="pt-32 pb-12 md:pt-40 md:pb-16 px-6 md:px-10">
+  <div className="mx-auto max-w-5xl text-center">
+    <p className="text-[13px] uppercase tracking-[0.5em] text-taupe">Our Story</p>
+    <h1 className="mt-7 font-display text-5xl leading-[1.08] text-foreground md:text-7xl">
+      More than a café — a quiet ritual.
+    </h1>
+    <p className="mx-auto mt-7 max-w-4xl text-lg leading-[1.8] text-muted-foreground md:text-xl">
+      Ritual is a mindful and comfortable space that invites you to dine and unwind, gather and create.
+    </p>
+  </div>
+</section>
 
       <section className="mx-auto max-w-7xl px-6 md:px-10 pb-16">
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="aspect-[4/5] overflow-hidden rounded-sm">
-            <img src={img4} alt="Wooden table interior" className="h-full w-full object-cover" />
-          </div>
-          <div className="aspect-[4/5] overflow-hidden rounded-sm">
-  <img src={img2} alt="Soft staircase and natural light" className="h-full w-full object-cover" />
-</div>
+  <div className="aspect-[16/7] overflow-hidden rounded-sm">
+    <img src={img1} alt="Espresso bar lit by warm sunset light" className="h-full w-full object-cover" />
+  </div>
+</section>
+
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-14 md:py-20">
+  <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+    <div>
+      <p className="text-[13px] uppercase tracking-[0.5em] text-taupe">Quality, Sourced</p>
+      <h2 className="mt-6 font-display text-4xl leading-[1.12] text-foreground md:text-5xl">
+        Honest food, slow coffee
+      </h2>
+    </div>
+
+    <p className="max-w-xl text-lg leading-[1.9] text-muted-foreground md:text-xl">
+      Ritual embraces quality food, coffee and service. We serve holistic, fresh fare sourced from quality farms — and the food is as tasty as it looks. From single-origin pour-overs to warm sourdough plates, every detail is considered.
+    </p>
+  </div>
+</section>
+
+      <section className="mx-auto max-w-7xl px-6 md:px-10 pb-16">
+  <div className="grid gap-6 md:grid-cols-2">
+    <div className="aspect-[4/5] overflow-hidden rounded-sm">
+      <img src={img4} alt="Wooden table interior" className="h-full w-full object-cover" />
+    </div>
+
+    <div className="aspect-[4/5] overflow-hidden rounded-sm">
+      <img src={img2} alt="Soft staircase and natural light" className="h-full w-full object-cover" />
+    </div>
+  </div>
+</section>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 md:px-10 py-16 md:py-24">
-        <div className="grid gap-16 md:grid-cols-2 md:gap-24 items-start">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">Community</p>
-            <h2 className="mt-5 font-display text-4xl">A studio for the everyday</h2>
-          </div>
-          <div>
-            <p className="text-base leading-[1.9] text-muted-foreground">
-              We have carefully crafted a space for our guests to feel at home. Our meditation room hosts yoga
-              classes, art therapy, healing workshops and pop-up events. Add more meaningful routines to your day,
-              and come join the Ritual community.
-            </p>
-          </div>
-        </div>
-      </section>
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-14 md:py-20">
+  <div className="grid gap-10 md:grid-cols-2 md:gap-16">
+    <div>
+      <p className="text-[13px] uppercase tracking-[0.5em] text-taupe">Community</p>
+      <h2 className="mt-6 font-display text-4xl leading-[1.12] text-foreground md:text-5xl">
+        A studio for the everyday
+      </h2>
+    </div>
+
+    <p className="max-w-xl text-lg leading-[1.9] text-muted-foreground md:text-xl">
+      We have carefully crafted a space for our guests to feel at home. Our meditation room hosts yoga classes, art therapy, healing workshops and pop-up events. Add more meaningful routines to your day, and come join the Ritual community.
+    </p>
+  </div>
+</section>
 
       <section className="mx-auto max-w-7xl px-6 md:px-10 pb-24">
         <div className="aspect-[16/7] overflow-hidden rounded-sm">
@@ -90,7 +91,7 @@ function AboutPage() {
         </div>
       </section>
 
-      <section className="px-6 md:px-10 py-20 md:py-28 text-center">
+      <section className="px-6 md:px-10 pt-12 pb-24 text-center">
         <h2 className="font-display text-4xl md:text-5xl">Come share a quiet moment.</h2>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
           <Link
