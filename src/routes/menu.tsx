@@ -20,13 +20,10 @@ function MenuPage() {
   return (
     <>
       <section className="pt-36 pb-16 md:pt-44 md:pb-24 px-6 md:px-10 text-center">
-        <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">The Menu</p>
+        <p className="text-[14px] uppercase tracking-[0.4em] text-taupe">The Menu</p>
         <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
           A seasonal selection,<br/>made with care.
         </h1>
-        <p className="mt-8 max-w-xl mx-auto text-muted-foreground">
-          From slow-brewed pour-overs to warm sourdough plates and chilled smoothies.
-        </p>
 
         {/* Quick nav */}
         <nav className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
