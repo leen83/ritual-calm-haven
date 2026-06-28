@@ -61,8 +61,8 @@ function Home() {
 />
 <div className="absolute inset-0 bg-black/35" />
 <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/25 to-black/45" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-24 text-center md:pb-28">
-  <h1 className="fade-in-up font-display text-5xl leading-[1.05] text-white sm:text-6xl md:text-7xl lg:text-8xl">
+        <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-32 text-center md:pb-36">
+  <h1 className="fade-in-up font-display text-5xl leading-[1.05] text-white sm:text-6xl md:text-6xl lg:text-7xl">
     A quiet ritual,<br />brewed with intention.
   </h1>
 
