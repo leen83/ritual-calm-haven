@@ -22,10 +22,9 @@ function MenuPage() {
       <section className="pt-36 pb-16 md:pt-44 md:pb-24 px-6 md:px-10 text-center">
         <p className="text-[14px] uppercase tracking-[0.4em] text-taupe">The Menu</p>
         <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
-          A seasonal selection,<br/>made with care.
+          A seasonal selection,<br />made with care.
         </h1>
 
-        {/* Quick nav */}
         <nav className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-3 text-[11px] uppercase tracking-[0.3em] text-muted-foreground">
           {menu.map((s) => (
             <a
@@ -42,17 +41,13 @@ function MenuPage() {
       <div className="mx-auto max-w-6xl px-6 md:px-10 pb-32">
         {menu.map((section) => (
           <section key={section.title} id={slug(section.title)} className="scroll-mt-28 mb-24">
-            <div className="mb-12 flex items-end justify-between border-b border-border pb-6">
+            <div className="mb-12 border-b border-border pb-6">
               <h2 className="font-display text-4xl md:text-5xl">{section.title}</h2>
-              <span className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-                {section.items.length} items
-              </span>
             </div>
 
             <div className="grid gap-x-10 gap-y-14 md:grid-cols-2">
               {section.items.map((item) => (
                 <article key={item.name} className="group">
-                  {/* Empty image frame for owner to add photos later */}
                   <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-border bg-secondary/60 flex items-center justify-center transition-colors duration-500 group-hover:bg-secondary">
                     <ImageIcon className="h-7 w-7 text-taupe/50" strokeWidth={1} />
                     <span className="absolute bottom-3 right-3 text-[9px] uppercase tracking-[0.3em] text-taupe/60">
@@ -73,6 +68,7 @@ function MenuPage() {
                       {item.price}
                     </span>
                   </div>
+
                   {item.description && (
                     <p className="mt-2 text-sm leading-[1.7] text-muted-foreground">
                       {item.description}
