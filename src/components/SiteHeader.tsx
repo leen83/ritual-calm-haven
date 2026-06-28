@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-const logoAsset = "3ACB6F99-F501-4F16-B542-9569D5EFC787.png";
+const logoAsset = "/images/3ACB6F99-F501-4F16-B542-9569D5EFC787.png";
 
 const links = [
   { to: "/" as const, label: "Home" },
