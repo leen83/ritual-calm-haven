@@ -62,9 +62,9 @@ function AboutPage() {
           <div className="aspect-[4/5] overflow-hidden rounded-sm">
             <img src={img4} alt="Wooden table interior" className="h-full w-full object-cover" />
           </div>
-          <div className="aspect-[4/5] overflow-hidden rounded-sm md:mt-16">
-            <img src={img2} alt="Soft staircase and natural light" className="h-full w-full object-cover" />
-          </div>
+          <div className="aspect-[4/5] overflow-hidden rounded-sm">
+  <img src={img2} alt="Soft staircase and natural light" className="h-full w-full object-cover" />
+</div>
         </div>
       </section>
 
