@@ -125,7 +125,7 @@ function Home() {
       <section className="bg-secondary/40 py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 md:px-10">
           <div className="flex flex-col items-center text-center">
-            <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">Featured</p>
+            <p className="text-[12px] uppercase tracking-[0.45em] text-taupe">Featured</p>
             <h2 className="mt-5 font-display text-4xl md:text-5xl">From the menu</h2>
             <p className="mt-4 max-w-xl text-muted-foreground">
               A glimpse of what's on offer — from slow-brewed coffee to seasonal brunch.
@@ -142,7 +142,7 @@ function Home() {
         />
       </div>
 
-      <h3 className="mt-7 text-center font-display text-2xl leading-snug text-foreground md:text-3xl">
+      <h3 className="mt-7 text-center font-display text-[26px] leading-snug text-taupe md:text-[30px]">
   {f.name}
 </h3>
     </article>
