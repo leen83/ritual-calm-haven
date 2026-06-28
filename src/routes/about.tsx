@@ -25,7 +25,7 @@ function AboutPage() {
     <>
       <section className="pt-32 pb-12 md:pt-40 md:pb-16 px-6 md:px-10">
         <div className="mx-auto max-w-5xl text-center">
-          <p className="text-[13px] uppercase tracking-[0.5em] text-taupe">Our Story</p>
+          <p className="text-[14px] uppercase tracking-[0.5em] text-taupe">Our Story</p>
           <h1 className="mt-7 font-display text-5xl leading-[1.08] text-foreground md:text-7xl">
             More than a café — a quiet ritual.
           </h1>
@@ -44,7 +44,7 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-14 md:py-20">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-[13px] uppercase tracking-[0.5em] text-taupe">Quality, Sourced</p>
+            <p className="text-[14px] uppercase tracking-[0.5em] text-taupe">Quality, Sourced</p>
             <h2 className="mt-6 font-display text-4xl leading-[1.12] text-foreground md:text-5xl">
               Honest food, slow coffee
             </h2>
@@ -71,7 +71,7 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-14 md:py-20">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-[13px] uppercase tracking-[0.5em] text-taupe">Community</p>
+            <p className="text-[14px] uppercase tracking-[0.5em] text-taupe">Community</p>
             <h2 className="mt-6 font-display text-4xl leading-[1.12] text-foreground md:text-5xl">
               A studio for the everyday
             </h2>
