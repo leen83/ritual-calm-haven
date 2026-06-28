@@ -44,7 +44,7 @@ function AboutPage() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 py-14 md:py-20">
         <div className="grid gap-10 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-[14px] uppercase tracking-[0.5em] text-taupe">Quality, Sourced</p>
+            <p className="text-[14px] uppercase tracking-[0.5em] text-taupe">Quality Sourced</p>
             <h2 className="mt-6 font-display text-4xl leading-[1.12] text-foreground md:text-5xl">
               Honest food, slow coffee
             </h2>
