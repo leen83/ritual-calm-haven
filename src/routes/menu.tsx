@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ImageIcon } from "lucide-react";
 import { menu } from "@/data/menu";
 
 export const Route = createFileRoute("/menu")({
@@ -15,6 +14,12 @@ export const Route = createFileRoute("/menu")({
   }),
   component: MenuPage,
 });
+
+const featuredItems = [
+  "Avocado Toast",
+  "Iced Honeycomb Latte",
+  "San Sebastian Cheesecake",
+];
 
 function MenuPage() {
   return (
@@ -38,24 +43,34 @@ function MenuPage() {
         </nav>
       </section>
 
+      <section className="mx-auto max-w-6xl px-6 md:px-10 pb-20">
+        <div className="grid gap-8 md:grid-cols-3">
+          {featuredItems.map((name) => (
+            <article key={name} className="text-center">
+              <div className="aspect-[4/3] w-full rounded-sm border border-border bg-secondary/60 flex items-center justify-center">
+                <span className="text-[10px] uppercase tracking-[0.35em] text-taupe">
+                  Add Photo
+                </span>
+              </div>
+              <h2 className="mt-5 font-display text-2xl text-foreground">
+                {name}
+              </h2>
+            </article>
+          ))}
+        </div>
+      </section>
+
       <div className="mx-auto max-w-6xl px-6 md:px-10 pb-32">
         {menu.map((section) => (
           <section key={section.title} id={slug(section.title)} className="scroll-mt-28 mb-24">
-            <div className="mb-12 border-b border-border pb-6">
+            <div className="mb-10 border-b border-border pb-6">
               <h2 className="font-display text-4xl md:text-5xl">{section.title}</h2>
             </div>
 
-            <div className="grid gap-x-10 gap-y-14 md:grid-cols-2">
+            <div className="grid gap-x-14 gap-y-8 md:grid-cols-2">
               {section.items.map((item) => (
-                <article key={item.name} className="group">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-border bg-secondary/60 flex items-center justify-center">
-                    <ImageIcon className="h-7 w-7 text-taupe/50" strokeWidth={1} />
-                    <span className="absolute bottom-3 right-3 text-[9px] uppercase tracking-[0.3em] text-taupe/60">
-                      photo
-                    </span>
-                  </div>
-
-                  <div className="mt-5 flex items-baseline justify-between gap-6">
+                <article key={item.name} className="border-b border-border/70 pb-7">
+                  <div className="flex items-baseline justify-between gap-6">
                     <h3 className="font-display text-2xl leading-tight">
                       {item.name}
                       {item.popular && (
