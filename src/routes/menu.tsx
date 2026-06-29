@@ -54,9 +54,9 @@ function MenuPage() {
                     <h3 className="font-display text-2xl leading-tight">
                       {item.name}
                       {item.popular && (
-                        <span className="ml-3 align-middle text-[9px] uppercase tracking-[0.3em] text-taupe border border-taupe/40 px-2 py-0.5 rounded-full">
-                          popular
-                        </span>
+                        <span className="ml-3 align-middle text-[9px] uppercase tracking-[0.3em] text-[#8b6f47] border border-[#c7a46b]/60 bg-[#d8c09a]/20 px-2 py-0.5 rounded-full">
+  popular
+</span>
                       )}
                     </h3>
                     <span className="shrink-0 text-sm tracking-wide text-foreground">
