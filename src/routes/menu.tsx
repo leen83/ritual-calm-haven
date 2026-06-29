@@ -6,7 +6,7 @@ export const Route = createFileRoute("/menu")({
   head: () => ({
     meta: [
       { title: "Menu — Ritual Café & Studio" },
-      { name: "description", content: "Breakfast, brunch, mains, specialty coffee, matcha, smoothies and desserts at Ritual Café & Studio, Reem Island." },
+      { name: "description", content: "Breakfast, brunch, mains, specialty coffee, matcha, smoothies and desserts at Ritual Café & Studio." },
       { property: "og:title", content: "Menu — Ritual Café & Studio" },
       { property: "og:description", content: "Specialty coffee, holistic food and seasonal brunch." },
       { property: "og:url", content: "/menu" },
@@ -48,7 +48,7 @@ function MenuPage() {
             <div className="grid gap-x-10 gap-y-14 md:grid-cols-2">
               {section.items.map((item) => (
                 <article key={item.name} className="group">
-                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-border bg-secondary/60 flex items-center justify-center transition-colors duration-500 group-hover:bg-secondary">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden rounded-sm border border-border bg-secondary/60 flex items-center justify-center">
                     <ImageIcon className="h-7 w-7 text-taupe/50" strokeWidth={1} />
                     <span className="absolute bottom-3 right-3 text-[9px] uppercase tracking-[0.3em] text-taupe/60">
                       photo
