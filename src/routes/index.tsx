@@ -185,7 +185,7 @@ function Home() {
           <div className="mt-16 grid gap-10 md:grid-cols-3">
             {reviews.map((r) => (
               <figure key={r.name} className="flex flex-col">
-                <div className="flex gap-1 text-taupe">
+                <div className="flex gap-1 text-[#b8a15f]">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="h-3.5 w-3.5 fill-current" />
                   ))}
@@ -193,9 +193,9 @@ function Home() {
                 <blockquote className="mt-5 font-display text-2xl leading-[1.4]">
                   "{r.quote}"
                 </blockquote>
-                <figcaption className="mt-6 text-xs uppercase tracking-[0.25em] text-muted-foreground">
-                  {r.name} · {r.detail}
-                </figcaption>
+                <figcaption className="mt-6 text-center text-xs uppercase tracking-[0.25em] text-muted-foreground">
+  {r.name}
+</figcaption>
               </figure>
             ))}
           </div>
