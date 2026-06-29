@@ -1,90 +1,104 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Music2, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Music2, MapPin, Phone, Mail } from "lucide-react";
 
-export function SiteFooter() {
+export function Footer() {
   return (
-    <footer className="border-t border-border/60 bg-secondary/40 mt-24">
-      <div className="mx-auto max-w-7xl px-6 md:px-10 py-16 grid gap-12 md:grid-cols-3">
+    <footer className="border-t border-border bg-secondary/40">
+      <div className="mx-auto grid max-w-7xl gap-14 px-6 py-20 md:grid-cols-3 md:px-10">
         <div>
-          <h3 className="font-display text-2xl">Ritual</h3>
-          <p className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">
-            café & studio
+          <h2 className="font-display text-3xl">Ritual</h2>
+          <p className="mt-5 text-[13px] uppercase tracking-[0.4em] text-taupe">
+            Café & Studio
           </p>
-          <p className="mt-6 text-sm leading-relaxed text-muted-foreground max-w-xs">
-            A mindful & comfortable space to dine, unwind, and gather. Reem Island, Abu Dhabi.
+          <p className="mt-8 max-w-xs text-base leading-[1.8] text-muted-foreground">
+            Specialty coffee, seasonal food, and thoughtfully designed spaces across Abu Dhabi and Al Ain.
           </p>
         </div>
 
         <div>
-          <h4 className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Visit</h4>
-          <ul className="mt-5 space-y-3 text-sm">
-            <li className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-4 w-4 text-taupe shrink-0" />
-              <span>Unit 10, Reem Central Park, Reem Island, Abu Dhabi</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <Phone className="h-4 w-4 text-taupe shrink-0" />
-              <a href="tel:+971502637100" className="hover:text-foreground transition-colors">
-                050 263 7100
-              </a>
-            </li>
-            <li className="flex items-center gap-3">
-              <Mail className="h-4 w-4 text-taupe shrink-0" />
-              <a href="mailto:hello@ritual.uae" className="hover:text-foreground transition-colors">
-                hello@ritual.uae
-              </a>
-            </li>
-          </ul>
-        </div>
+          <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">
+            Locations
+          </p>
 
-        <div>
-          <h4 className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Follow</h4>
-          <a
-            href="https://instagram.com/ritual.uae"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-5 inline-block text-sm hover:text-foreground transition-colors"
-          >
-            @ritual.uae
-          </a>
-          <div className="mt-5 flex items-center gap-4">
-            <a
-              href="https://instagram.com/ritual.uae"s
-              target="_blank"
-              rel="noreferrer"
-              aria-label="Instagram"
-              className="rounded-full border border-border p-2.5 text-foreground/70 hover:text-foreground hover:border-foreground transition-all duration-300"
-            >
-              <Instagram className="h-4 w-4" />
-            </a>
-            <a
-              href="https://www.tiktok.com/@ritual.ae?_r=1&_t=ZS-970oUEYio7R&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnLb4LFTkYuycZi3CZ9O4CPkq8-ZsXneOnTuwsfP5_-E_Arm7ta6x67X0xmrM_aem_VxV6Jq64mS6kXnRntTcrPA"
-              aria-label="TikTok"
-              className="rounded-full border border-border p-2.5 text-foreground/70 hover:text-foreground hover:border-foreground transition-all duration-300"
-            >
-              <Music2 className="h-4 w-4" />
-            </a>
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="rounded-full border border-border p-2.5 text-foreground/70 hover:text-foreground hover:border-foreground transition-all duration-300"
-            >
-              <Facebook className="h-4 w-4" />
-            </a>
+          <div className="mt-8 space-y-5 text-muted-foreground">
+            <div className="flex gap-4">
+              <MapPin className="mt-1 h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+              <div className="space-y-2 leading-[1.7]">
+                <p>Abu Dhabi</p>
+                <p>Al Ain</p>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Phone className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+              <p>050 263 7100</p>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Mail className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+              <p>hello@ritual.uae</p>
+            </div>
           </div>
 
-          <nav className="mt-8 flex flex-wrap gap-x-6 gap-y-2 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-            <Link to="/" className="hover:text-foreground transition-colors">Home</Link>
-            <Link to="/about" className="hover:text-foreground transition-colors">About</Link>
-            <Link to="/menu" className="hover:text-foreground transition-colors">Menu</Link>
-            <Link to="/location" className="hover:text-foreground transition-colors">Location</Link>
+          <Link
+            to="/location"
+            className="mt-8 inline-block text-xs uppercase tracking-[0.3em] text-foreground hover:text-taupe transition-colors"
+          >
+            View all locations
+          </Link>
+        </div>
+
+        <div>
+          <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">
+            Follow
+          </p>
+
+          <p className="mt-8 text-lg">@ritual_ae</p>
+
+          <div className="mt-8 flex gap-4">
+            <a
+              href="https://www.instagram.com/ritual_ae"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
+            >
+              <Instagram className="h-5 w-5" strokeWidth={1.5} />
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@ritual.ae"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
+            >
+              <Music2 className="h-5 w-5" strokeWidth={1.5} />
+            </a>
+
+            <a
+  href="https://www.instagram.com/ritual_ae/?hl=en"
+  target="_blank"
+  rel="noreferrer"
+  className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
+>
+  <Instagram className="h-5 w-5" strokeWidth={1.5} />
+</a>
+          </div>
+
+          <nav className="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-[13px] uppercase tracking-[0.3em] text-taupe">
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/menu">Menu</Link>
+            <Link to="/location">Location</Link>
           </nav>
         </div>
       </div>
-      <div className="border-t border-border/60">
-        <div className="mx-auto max-w-7xl px-6 md:px-10 py-6 flex flex-col md:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Ritual Café & Studio. All rights reserved.</p>
-          <p className="tracking-[0.2em] uppercase">Reem Island · Abu Dhabi</p>
+
+      <div className="border-t border-border">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-6 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-10">
+          <p>© 2026 Ritual Café & Studio. All rights reserved.</p>
+          <p className="text-[12px] uppercase tracking-[0.4em] text-taupe">
+            Abu Dhabi · Al Ain
+          </p>
         </div>
       </div>
     </footer>
