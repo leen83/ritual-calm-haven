@@ -6,7 +6,7 @@ export function SiteFooter() {
     <footer className="border-t border-border/60 bg-secondary/40 mt-24">
       <div className="mx-auto max-w-7xl px-6 md:px-10 py-16 grid gap-12 md:grid-cols-3">
         <div>
-          <h3 className="font-display text-2xl">ritual</h3>
+          <h3 className="font-display text-2xl">Ritual</h3>
           <p className="mt-2 text-xs uppercase tracking-[0.3em] text-muted-foreground">
             café & studio
           </p>
