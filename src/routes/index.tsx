@@ -184,7 +184,7 @@ function Home() {
           </div>
           <div className="mt-16 grid gap-10 md:grid-cols-3">
             {reviews.map((r) => (
-              <figure key={r.name} className="flex flex-col">
+              <figure key={r.name} className="flex flex-col items-center text-center">
                 <div className="flex gap-1 text-[#b8a15f]">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <Star key={i} className="h-3.5 w-3.5 fill-current" />
