@@ -1,115 +1,125 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, Phone, Mail, Instagram, Clock } from "lucide-react";
-import exteriorImg from "@/assets/image-6.jpeg.asset.json";
-import { hours } from "@/data/menu";
+import { MapPin, Phone, Clock, ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/location")({
   head: () => ({
     meta: [
-      { title: "Location — Ritual Café & Studio, Reem Island" },
-      { name: "description", content: "Visit Ritual Café & Studio at Unit 10, Reem Central Park, Reem Island, Abu Dhabi. Open daily." },
-      { property: "og:title", content: "Visit Ritual Café & Studio" },
-      { property: "og:description", content: "Unit 10, Reem Central Park, Reem Island, Abu Dhabi." },
+      { title: "Locations — Ritual Café & Studio" },
+      {
+        name: "description",
+        content:
+          "Find Ritual Café locations across Abu Dhabi and Al Ain, including Reem Island, HBZ, Oasis, STMC, and UAEU.",
+      },
+      { property: "og:title", content: "Locations — Ritual Café & Studio" },
+      {
+        property: "og:description",
+        content: "Multiple Ritual Café locations across Abu Dhabi and Al Ain.",
+      },
       { property: "og:url", content: "/location" },
-      { property: "og:image", content: exteriorImg.url },
     ],
     links: [{ rel: "canonical", href: "/location" }],
   }),
   component: LocationPage,
 });
 
+const locations = [
+  {
+    name: "Ritual Café & Studio",
+    area: "Reem Island",
+    address: "Unit 10, Reem Central Park, Reem Island, Abu Dhabi",
+    hours: "7AM–12AM",
+    phone: "050 263 7100",
+    map: "https://www.google.com/maps/search/?api=1&query=Ritual%20Cafe%20Studio%20Reem%20Island%20Abu%20Dhabi",
+  },
+  {
+    name: "Ritual Café",
+    area: "HBZ / Al Khibeesi",
+    address: "Hamdan Bin Zayed St, Al Khibeesi, Al Zaafaran, Al Ain, Abu Dhabi",
+    hours: "7AM–12AM",
+    phone: "+971 3 753 2600",
+    map: "https://www.google.com/maps/search/?api=1&query=Ritual%20Cafe%20Hamdan%20Bin%20Zayed%20St%20Al%20Ain",
+  },
+  {
+    name: "Ritual Café Al Ain Oasis",
+    area: "Al Ain Oasis",
+    address: "Central District, Al Ain Oasis, Al Ain, Abu Dhabi",
+    hours: "8AM–12AM",
+    phone: "+971 54 583 9545",
+    map: "https://www.google.com/maps/search/?api=1&query=Ritual%20Cafe%20Al%20Ain%20Oasis",
+  },
+  {
+    name: "Ritual Café",
+    area: "STMC",
+    address: "Sheikh Tahnoon bin Mohammed Medical City, Al Mu'tarid, Al Ain, Abu Dhabi",
+    hours: "7AM–12AM",
+    phone: "",
+    map: "https://www.google.com/maps/search/?api=1&query=Ritual%20Cafe%20STMC%20Al%20Ain",
+  },
+  {
+    name: "Ritual Café",
+    area: "UAEU",
+    address: "United Arab Emirates University, Al Ain, Abu Dhabi",
+    hours: "7AM–7PM",
+    phone: "",
+    map: "https://www.google.com/maps/search/?api=1&query=Ritual%20Cafe%20UAEU%20Al%20Ain",
+  },
+];
+
 function LocationPage() {
   return (
     <>
-      <section className="pt-36 pb-12 md:pt-44 md:pb-16 px-6 md:px-10 text-center">
-        <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">Visit</p>
+      <section className="pt-36 pb-16 md:pt-44 md:pb-20 px-6 md:px-10 text-center">
+        <p className="text-[14px] uppercase tracking-[0.4em] text-taupe">Locations</p>
         <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
-          Reem Central Park,<br/>Abu Dhabi.
+          Find your nearest<br />Ritual.
         </h1>
-        <p className="mt-6 max-w-xl mx-auto text-muted-foreground">
-          On the water at Reem Island — a quiet escape, minutes from the city.
-        </p>
       </section>
 
-      <section className="mx-auto max-w-7xl px-6 md:px-10 pb-20">
-        <div className="aspect-[16/9] overflow-hidden rounded-sm">
-          <iframe
-            title="Ritual Café & Studio map"
-            src="https://www.google.com/maps?q=Ritual+Cafe+%26+Studio+Reem+Central+Park+Abu+Dhabi&output=embed"
-            className="h-full w-full border-0 grayscale-[20%]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
-        </div>
-      </section>
+      <section className="mx-auto max-w-7xl px-6 md:px-10 pb-28">
+        <div className="grid gap-6 md:grid-cols-2">
+          {locations.map((location) => (
+            <article
+              key={`${location.name}-${location.area}`}
+              className="rounded-sm border border-border bg-background/60 p-8 md:p-10"
+            >
+              <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">
+                {location.area}
+              </p>
 
-      <section className="mx-auto max-w-6xl px-6 md:px-10 pb-24">
-        <div className="grid gap-16 md:grid-cols-2 md:gap-24">
-          <div>
-            <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">Contact</p>
-            <h2 className="mt-5 font-display text-4xl">Say hello</h2>
+              <h2 className="mt-5 font-display text-4xl leading-tight text-foreground">
+                {location.name}
+              </h2>
 
-            <ul className="mt-10 space-y-6 text-sm">
-              <li className="flex items-start gap-4">
-                <span className="rounded-full border border-border p-3 text-taupe">
-                  <MapPin className="h-4 w-4" />
-                </span>
-                <a
-                  href="https://maps.google.com/?q=Ritual+Cafe+Studio+Reem+Central+Park+Abu+Dhabi"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="leading-relaxed hover:text-foreground transition-colors"
-                >
-                  Unit 10, Reem Central Park<br />Reem Island, Abu Dhabi
-                </a>
-              </li>
-              <li className="flex items-center gap-4">
-                <span className="rounded-full border border-border p-3 text-taupe">
-                  <Phone className="h-4 w-4" />
-                </span>
-                <a href="tel:+971502637100" className="hover:text-foreground transition-colors">
-                  050 263 7100
-                </a>
-              </li>
-              <li className="flex items-center gap-4">
-                <span className="rounded-full border border-border p-3 text-taupe">
-                  <Mail className="h-4 w-4" />
-                </span>
-                <a href="mailto:hello@ritual.uae" className="hover:text-foreground transition-colors">
-                  hello@ritual.uae
-                </a>
-              </li>
-              <li className="flex items-center gap-4">
-                <span className="rounded-full border border-border p-3 text-taupe">
-                  <Instagram className="h-4 w-4" />
-                </span>
-                <a
-                  href="https://instagram.com/ritual.uae"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-foreground transition-colors"
-                >
-                  @ritual.uae
-                </a>
-              </li>
-            </ul>
-          </div>
+              <div className="mt-8 space-y-5 text-muted-foreground">
+                <div className="flex gap-4">
+                  <MapPin className="mt-1 h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+                  <p className="text-base leading-[1.7]">{location.address}</p>
+                </div>
 
-          <div>
-            <div className="flex items-center gap-3 text-taupe">
-              <Clock className="h-4 w-4" />
-              <p className="text-[11px] uppercase tracking-[0.4em]">Opening Hours</p>
-            </div>
-            <h2 className="mt-5 font-display text-4xl">Open every day</h2>
-            <ul className="mt-10 divide-y divide-border">
-              {hours.map((h) => (
-                <li key={h.day} className="flex items-center justify-between py-4 text-sm">
-                  <span className="uppercase tracking-[0.2em] text-xs">{h.day}</span>
-                  <span className="text-muted-foreground">{h.time}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
+                <div className="flex gap-4">
+                  <Clock className="mt-1 h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+                  <p className="text-base leading-[1.7]">{location.hours}</p>
+                </div>
+
+                {location.phone && (
+                  <div className="flex gap-4">
+                    <Phone className="mt-1 h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+                    <p className="text-base leading-[1.7]">{location.phone}</p>
+                  </div>
+                )}
+              </div>
+
+              <a
+                href={location.map}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-8 inline-flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-foreground transition-colors duration-300 hover:text-taupe"
+              >
+                Open in Maps
+                <ArrowRight className="h-3.5 w-3.5" />
+              </a>
+            </article>
+          ))}
         </div>
       </section>
     </>
