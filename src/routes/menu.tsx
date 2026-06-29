@@ -15,16 +15,11 @@ export const Route = createFileRoute("/menu")({
   component: MenuPage,
 });
 
-const featuredItems = [
-  "Avocado Toast",
-  "Iced Honeycomb Latte",
-  "San Sebastian Cheesecake",
-];
 
 function MenuPage() {
   return (
     <>
-      <section className="pt-36 pb-16 md:pt-44 md:pb-24 px-6 md:px-10 text-center">
+      <section className="pt-36 pb-12 md:pt-44 md:pb-16 px-6 md:px-10 text-center">
         <p className="text-[14px] uppercase tracking-[0.4em] text-taupe">The Menu</p>
         <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
           A seasonal selection,<br />made with care.
@@ -43,22 +38,7 @@ function MenuPage() {
         </nav>
       </section>
 
-      <section className="mx-auto max-w-6xl px-6 md:px-10 pb-20">
-        <div className="grid gap-8 md:grid-cols-3">
-          {featuredItems.map((name) => (
-            <article key={name} className="text-center">
-              <div className="aspect-[4/3] w-full rounded-sm border border-border bg-secondary/60 flex items-center justify-center">
-                <span className="text-[10px] uppercase tracking-[0.35em] text-taupe">
-                  Add Photo
-                </span>
-              </div>
-              <h2 className="mt-5 font-display text-2xl text-foreground">
-                {name}
-              </h2>
-            </article>
-          ))}
-        </div>
-      </section>
+    
 
       <div className="mx-auto max-w-6xl px-6 md:px-10 pb-32">
         {menu.map((section) => (
