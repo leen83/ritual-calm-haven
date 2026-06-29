@@ -21,7 +21,7 @@ export function SiteFooter() {
           </p>
 
           <div className="mt-8 space-y-5 text-muted-foreground">
-            <div className="flex gap-4">
+            <div className="flex items-start gap-4">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
               <div className="space-y-2 leading-[1.7]">
                 <p>Abu Dhabi</p>
@@ -39,13 +39,6 @@ export function SiteFooter() {
               <p>hello@ritual.uae</p>
             </div>
           </div>
-
-          <Link
-            to="/location"
-            className="mt-8 inline-block text-xs uppercase tracking-[0.3em] text-foreground hover:text-taupe transition-colors"
-          >
-            View all locations
-          </Link>
         </div>
 
         <div>
@@ -57,7 +50,7 @@ export function SiteFooter() {
 
           <div className="mt-8 flex gap-4">
             <a
-              href="https://www.instagram.com/ritual_ae"
+              href="https://www.instagram.com/ritual.uae"
               target="_blank"
               rel="noreferrer"
               className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
@@ -75,21 +68,14 @@ export function SiteFooter() {
             </a>
 
             <a
-  href="https://www.instagram.com/ritual_ae/?hl=en"
-  target="_blank"
-  rel="noreferrer"
-  className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
->
-  <Instagram className="h-5 w-5" strokeWidth={1.5} />
-</a>
+              href="https://www.instagram.com/ritual_ae/?hl=en"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
+            >
+              <Instagram className="h-5 w-5" strokeWidth={1.5} />
+            </a>
           </div>
-
-          <nav className="mt-10 flex flex-wrap gap-x-8 gap-y-4 text-[13px] uppercase tracking-[0.3em] text-taupe">
-            <Link to="/">Home</Link>
-            <Link to="/about">About</Link>
-            <Link to="/menu">Menu</Link>
-            <Link to="/location">Location</Link>
-          </nav>
         </div>
       </div>
 
