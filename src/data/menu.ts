@@ -47,7 +47,8 @@ export const menu: MenuSection[] = [
       { name: "Pesto Fusilli", description: "Spinach pesto with basil, pine nuts and burrata.", price: "AED 78" },
       { name: "Grilled Salmon", description: "Coconut rice with mango and pomegranate salsa.", price: "AED 76" },
       { name: "Golden Harissa Chicken", description: "Harissa-mayo grilled chicken on couscous and chickpeas.", price: "AED 66" },
-      { name: "Thai Curry Shrimp or Chicken", description: "Thai curry, sticky coconut rice, red peppers.", price: "Market" },
+      { name: "Thai Curry",  description: "Thai curry with coconut rice and red capsicum.",  price: "Chicken AED 56 · Shrimp AED 58",
+},
     ],
   },
   {
