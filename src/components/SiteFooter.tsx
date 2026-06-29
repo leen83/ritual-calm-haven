@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Music2, MapPin, Phone, Mail } from "lucide-react";
+import { Instagram, Music2, MapPin, Phone } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -32,11 +32,6 @@ export function SiteFooter() {
             <div className="flex items-center gap-4">
               <Phone className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
               <p>050 263 7100</p>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <Mail className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
-              <p>hello@ritual.uae</p>
             </div>
           </div>
         </div>
