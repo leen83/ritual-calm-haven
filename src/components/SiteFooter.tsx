@@ -49,7 +49,7 @@ export function SiteFooter() {
           </a>
           <div className="mt-5 flex items-center gap-4">
             <a
-              href="https://instagram.com/ritual.uae"
+              href="https://instagram.com/ritual.uae"s
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"
@@ -58,7 +58,7 @@ export function SiteFooter() {
               <Instagram className="h-4 w-4" />
             </a>
             <a
-              href="#"
+              href="https://www.tiktok.com/@ritual.ae?_r=1&_t=ZS-970oUEYio7R&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPOTM2NjE5NzQzMzkyNDU5AAGnLb4LFTkYuycZi3CZ9O4CPkq8-ZsXneOnTuwsfP5_-E_Arm7ta6x67X0xmrM_aem_VxV6Jq64mS6kXnRntTcrPA"
               aria-label="TikTok"
               className="rounded-full border border-border p-2.5 text-foreground/70 hover:text-foreground hover:border-foreground transition-all duration-300"
             >
