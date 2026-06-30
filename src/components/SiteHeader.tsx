@@ -28,7 +28,7 @@ export function SiteHeader() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-10 md:py-5">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-        <img src={logoAsset} alt="Ritual Café & Studio" className="h-12 w-auto object-contain" />
+        <img src={logoAsset} alt="Ritual Café & Studio" className="h-14 w-auto object-contain" />
         </Link>
 
         <nav className="hidden md:flex items-center gap-10">
