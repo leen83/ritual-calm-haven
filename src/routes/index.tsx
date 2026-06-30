@@ -202,53 +202,53 @@ function Home() {
         </div>
       </section>
 
-      {/* Branch Hours */}
-<section className="mx-auto max-w-7xl px-6 md:px-10 py-24 md:py-32">
-  <div className="grid gap-16 md:grid-cols-2 md:gap-24">
-    <div>
-      <div className="flex items-center gap-3 text-taupe">
-        <Clock className="h-4 w-4" />
-        <p className="text-[11px] uppercase tracking-[0.4em]">Branch Hours</p>
-      </div>
+            {/* Hours + Visit */}
+      <section className="mx-auto max-w-7xl px-6 md:px-10 py-24 md:py-32">
+        <div className="grid gap-16 md:grid-cols-2 md:gap-24">
+          <div>
+            <div className="flex items-center gap-3 text-taupe">
+              <Clock className="h-4 w-4" />
+              <p className="text-[11px] uppercase tracking-[0.4em]">Opening Hours</p>
+            </div>
 
-      <h2 className="mt-5 font-display text-4xl md:text-5xl">
-        Open across<br />Abu Dhabi & Al Ain.
-      </h2>
-    </div>
+            <h2 className="mt-5 font-display text-4xl md:text-5xl">
+              Open every day
+            </h2>
 
-    <div>
-      <ul className="divide-y divide-border">
-        <li className="flex items-center justify-between py-4 text-sm">
-          <span className="uppercase tracking-[0.2em] text-xs">Reem Island</span>
-          <span className="text-muted-foreground">7AM – 12AM</span>
-        </li>
-        <li className="flex items-center justify-between py-4 text-sm">
-          <span className="uppercase tracking-[0.2em] text-xs">HBZ / Al Khibeesi</span>
-          <span className="text-muted-foreground">7AM – 12AM</span>
-        </li>
-        <li className="flex items-center justify-between py-4 text-sm">
-          <span className="uppercase tracking-[0.2em] text-xs">Al Ain Oasis</span>
-          <span className="text-muted-foreground">8AM – 12AM</span>
-        </li>
-        <li className="flex items-center justify-between py-4 text-sm">
-          <span className="uppercase tracking-[0.2em] text-xs">STMC</span>
-          <span className="text-muted-foreground">7AM – 12AM</span>
-        </li>
-        <li className="flex items-center justify-between py-4 text-sm">
-          <span className="uppercase tracking-[0.2em] text-xs">UAEU</span>
-          <span className="text-muted-foreground">7AM – 7PM</span>
-        </li>
-      </ul>
+            <ul className="mt-10 divide-y divide-border">
+              {hours.map((h) => (
+                <li key={h.day} className="flex items-center justify-between py-4 text-sm">
+                  <span className="uppercase tracking-[0.2em] text-xs">{h.day}</span>
+                  <span className="text-muted-foreground">{h.time}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      <Link
-        to="/location"
-        className="mt-8 inline-flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-foreground transition-colors duration-300 hover:text-taupe"
-      >
-        View all locations <ArrowRight className="h-3.5 w-3.5" />
-      </Link>
-    </div>
-  </div>
-</section>
+          <div>
+            <div className="flex items-center gap-3 text-taupe">
+              <MapPin className="h-4 w-4" />
+              <p className="text-[11px] uppercase tracking-[0.4em]">Find Us</p>
+            </div>
+
+            <h2 className="mt-5 font-display text-4xl md:text-5xl">
+              Reem Central Park
+            </h2>
+
+            <p className="mt-6 text-muted-foreground leading-[1.85]">
+              Unit 10, Reem Central Park,<br />
+              Reem Island, Abu Dhabi
+            </p>
+
+            <Link
+              to="/location"
+              className="mt-10 inline-flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-foreground border-b border-foreground pb-1 hover:gap-5 transition-all duration-500"
+            >
+              Get Directions <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
