@@ -3,6 +3,8 @@ import { ArrowRight, MapPin, Clock, Star } from "lucide-react";
 import { hours } from "@/data/menu";
 
 const heroImg = "/images/IMG_5879.jpeg";
+const ritual1Img = "/images/Ritual1.jpeg";
+const ritual2Img = "/images/Ritual2.jpeg";
 const aboutImg = "/images/IMG_5880.jpeg";
 const interior1 = "/images/IMG_8316.jpeg";
 const interior2 = "/images/IMG_8318.jpeg";
@@ -161,13 +163,13 @@ function Home() {
             <img src={brunchImg} alt="Brunch with waterfront view" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-[4/3] md:aspect-auto overflow-hidden rounded-sm">
-            <img src={interior2} alt="Soft natural light in the staircase" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={ritual1Img} alt="Ritual café interior" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-square overflow-hidden rounded-sm">
             <img src={drinkImg} alt="House signature drink" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-square overflow-hidden rounded-sm">
-            <img src={interior1} alt="Espresso bar with greenery" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
+            <img src={ritual2Img} alt="Ritual café interior" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
           </div>
           <div className="md:col-span-2 aspect-square overflow-hidden rounded-sm">
             <img src={interior3} alt="Curated studio space" className="h-full w-full object-cover transition-transform duration-[1400ms] hover:scale-105" />
