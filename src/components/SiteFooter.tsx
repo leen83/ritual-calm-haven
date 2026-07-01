@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { Instagram, MapPin, Phone } from "lucide-react";
 
 export function SiteFooter() {
@@ -11,21 +10,23 @@ export function SiteFooter() {
             Café & Studio
           </p>
           <p className="mt-8 max-w-xs text-base leading-[1.8] text-muted-foreground">
-  A mindful café and studio on Reem Island, Abu Dhabi — serving specialty coffee, seasonal food, and quiet moments.
-</p>
+            A mindful café and studio on Reem Island, Abu Dhabi — serving specialty coffee, seasonal food, and quiet moments.
+          </p>
         </div>
 
         <div>
           <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">
-            Locations
+            Location
           </p>
 
           <div className="mt-8 space-y-5 text-muted-foreground">
             <div className="flex items-start gap-4">
               <MapPin className="mt-1 h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
               <div className="leading-[1.7]">
-  <p>Reem Island, Abu Dhabi</p>
-</div>
+                <p>Unit 10, Reem Central Park</p>
+                <p>Reem Island, Abu Dhabi</p>
+              </div>
+            </div>
 
             <div className="flex items-center gap-4">
               <Phone className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
@@ -42,15 +43,15 @@ export function SiteFooter() {
           <p className="mt-8 text-lg">@ritual.uae</p>
 
           <div className="mt-8 flex gap-4">
-  <a
-    href="https://www.instagram.com/ritual.uae"
-    target="_blank"
-    rel="noreferrer"
-    className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
-  >
-    <Instagram className="h-5 w-5" strokeWidth={1.5} />
-  </a>
-</div>
+            <a
+              href="https://www.instagram.com/ritual.uae"
+              target="_blank"
+              rel="noreferrer"
+              className="flex h-14 w-14 items-center justify-center rounded-full border border-border text-taupe transition-colors hover:text-foreground"
+            >
+              <Instagram className="h-5 w-5" strokeWidth={1.5} />
+            </a>
+          </div>
         </div>
       </div>
 
