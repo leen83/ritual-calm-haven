@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { ArrowRight, Clock, Instagram, MapPin, Phone } from "lucide-react";
+import { ArrowRight, Clock, Instagram,Mail, MapPin, Phone } from "lucide-react";
 
 export const Route = createFileRoute("/location")({
   head: () => ({
@@ -82,6 +82,17 @@ function LocationPage() {
                   050 263 7100
                 </a>
               </div>
+              <div className="flex items-center gap-4">
+  <span className="rounded-full border border-border p-3 text-taupe">
+    <Mail className="h-4 w-4" />
+  </span>
+  <a
+    href="mailto:info@ritualstudio.ae"
+    className="transition-colors hover:text-foreground"
+  >
+    info@ritualstudio.ae
+  </a>
+</div>
 
               <div className="flex items-center gap-4">
                 <span className="rounded-full border border-border p-3 text-taupe">
