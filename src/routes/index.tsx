@@ -3,8 +3,8 @@ import { ArrowRight, MapPin, Clock, Star } from "lucide-react";
 import { hours } from "@/data/menu";
 
 const heroImg = "/images/IMG_5879.jpeg";
-const ritual1Img = "/images/Ritual1.jpeg";
-const ritual2Img = "/images/Ritual2.jpeg";
+const ritual1Img = "/images/Ritual1";
+const ritual2Img = "/images/Ritual2";
 const aboutImg = "/images/IMG_5880.jpeg";
 const interior1 = "/images/IMG_8316.jpeg";
 const interior2 = "/images/IMG_8318.jpeg";
