@@ -1,4 +1,4 @@
-import { Instagram, Mail,MapPin, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone } from "lucide-react";
 
 export function SiteFooter() {
   return (
@@ -35,21 +35,22 @@ export function SiteFooter() {
           </div>
         </div>
 
-      
+        <div>
           <p className="text-[11px] uppercase tracking-[0.4em] text-taupe">
             Follow
           </p>
 
           <p className="mt-8 text-lg">@ritual.uae</p>
-        <div className="mt-5 flex items-center gap-4 text-muted-foreground">
-  <Mail className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
-  <a
-    href="mailto:info@ritualstudio.ae"
-    className="transition-colors hover:text-foreground"
-  >
-    info@ritualstudio.ae
-  </a>
-</div>
+
+          <div className="mt-5 flex items-center gap-4 text-muted-foreground">
+            <Mail className="h-5 w-5 shrink-0 text-taupe" strokeWidth={1.5} />
+            <a
+              href="mailto:info@ritualstudio.ae"
+              className="transition-colors hover:text-foreground"
+            >
+              info@ritualstudio.ae
+            </a>
+          </div>
 
           <div className="mt-8 flex gap-4">
             <a
