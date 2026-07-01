@@ -144,13 +144,12 @@ export const menu: MenuSection[] = [
     ],
   },
 ];
-
 export const hours = [
-  { day: "Monday", time: "7:00 AM – 11:00 PM" },
-  { day: "Tuesday", time: "7:00 AM – 10:30 PM" },
-  { day: "Wednesday", time: "7:00 AM – 11:00 PM" },
-  { day: "Thursday", time: "7:00 AM – 11:00 PM" },
-  { day: "Friday", time: "7:00 AM – 12:00 AM" },
-  { day: "Saturday", time: "7:00 AM – 12:00 AM" },
-  { day: "Sunday", time: "7:00 AM – 11:00 PM" },
+  { day: "Monday", time: "7AM – 11PM" },
+  { day: "Tuesday", time: "7AM – 11PM" },
+  { day: "Wednesday", time: "7AM – 11PM" },
+  { day: "Thursday", time: "7AM – 11PM" },
+  { day: "Friday", time: "7AM – 11:30PM" },
+  { day: "Saturday", time: "7AM – 11:30PM" },
+  { day: "Sunday", time: "7AM – 11PM" },
 ];
