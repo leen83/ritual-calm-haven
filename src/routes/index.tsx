@@ -7,7 +7,7 @@ const aboutImg = "/images/IMG_5880.jpeg";
 const interior1 = "/images/IMG_8316.jpeg";
 const interior2 = "/images/IMG_8318.jpeg";
 const interior3 = "/images/IMG_8320.jpeg";
-const drinkImg = "/images/IMG_8321.jpeg";
+const acaiImg = "/images/IMG_8373.jpeg";
 const brunchImg = "/images/IMG_8322.jpeg";
 const cheesecakeImg = "/images/087E5C48-1CF3-4508-BBDD-A17DF8F98952.png";
 
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
 
 const featured = [
 { img: drinkImg, name: "Avocado Toast", note: "Signature" },
-{ img: brunchImg, name: "Iced Honeycomb Latte", note: "Brunch" },
+{ img: acaiImg, name: "Acai Berry Smoothie" },
 { img: cheesecakeImg, name: "San Sebastian Cheesecake" },
 ];
 const reviews = [
